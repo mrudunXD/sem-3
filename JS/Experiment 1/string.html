@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 1 - String Operations</title>
+</head>
+<body>
+    <h2>JavaScript String Functions and Operations</h2>
+
+    <script>
+        // Sample strings
+        let str = "Hello World";
+        let str2 = "Welcome to JavaScript";
+
+        document.write("<b>Original String:</b> " + str + "<br><br>");
+
+        // 1. Length of string
+        document.write("Length of string: " + str.length + "<br>");
+
+        // 2. toUpperCase() and toLowerCase()
+        document.write("Uppercase: " + str.toUpperCase() + "<br>");
+        document.write("Lowercase: " + str.toLowerCase() + "<br>");
+
+        // 3. charAt() - character at specific index
+        document.write("Character at index 1: " + str.charAt(1) + "<br>");
+
+        // 4. indexOf() and lastIndexOf()
+        document.write("Index of 'o': " + str.indexOf("o") + "<br>");
+        document.write("Last index of 'l': " + str.lastIndexOf("l") + "<br>");
+
+        // 5. includes() - check if substring exists
+        document.write("Includes 'World'?: " + str.includes("World") + "<br>");
+
+        // 6. startsWith() and endsWith()
+        document.write("Starts with 'Hello'?: " + str.startsWith("Hello") + "<br>");
+        document.write("Ends with 'World'?: " + str.endsWith("World") + "<br>");
+
+        // 7. slice() - extract part of string
+        document.write("Slice (0, 5): " + str.slice(0, 5) + "<br>");
+
+        // 8. substring() - extract part of string
+        document.write("Substring (6, 11): " + str.substring(6, 11) + "<br>");
+
+        // 9. replace() - replace text
+        let replacedStr = str.replace("World", "Everyone");
+        document.write("After replace('World', 'Everyone'): " + replacedStr + "<br>");
+
+        // 10. concat() - concatenate strings
+        let combined = str.concat(", ", str2);
+        document.write("Concatenated string: " + combined + "<br>");
+
+        // 11. trim() - remove whitespace
+        let spaceStr = "   MITWPU   ";
+        document.write("Trimmed: '" + spaceStr.trim() + "'<br>");
+
+        // 12. split() - split string into array
+        let sentence = "Apple,Banana,Mango";
+        let arr = sentence.split(",");
+        document.write("Split array: " + arr + "<br>");
+        document.write("First item of split array: " + arr[0] + "<br>");
+    </script>
+</body>
+</html>

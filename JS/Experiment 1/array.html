@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 1 - Array Operations</title>
+</head>
+<body>
+    <h2>JavaScript Array Functions and Operations</h2>
+
+    <script>
+        // Creating an array
+        let fruits = ["Apple", "Banana", "Mango", "Orange"];
+        document.write("<b>Original Array:</b> " + fruits + "<br><br>");
+
+        // 1. Length of array
+        document.write("Length of array: " + fruits.length + "<br>");
+
+        // 2. push() - add element at end
+        fruits.push("Pineapple");
+        document.write("After push('Pineapple'): " + fruits + "<br>");
+
+        // 3. pop() - remove last element
+        let poppedItem = fruits.pop();
+        document.write("Popped item: " + poppedItem + "<br>");
+        document.write("After pop(): " + fruits + "<br>");
+
+        // 4. unshift() - add element at start
+        fruits.unshift("Grapes");
+        document.write("After unshift('Grapes'): " + fruits + "<br>");
+
+        // 5. shift() - remove first element
+        let shiftedItem = fruits.shift();
+        document.write("Shifted item: " + shiftedItem + "<br>");
+        document.write("After shift(): " + fruits + "<br>");
+
+        // 6. indexOf() - find index
+        let pos = fruits.indexOf("Mango");
+        document.write("Index of 'Mango': " + pos + "<br>");
+
+        // 7. includes() - check existence
+        document.write("Does array include 'Banana'?: " + fruits.includes("Banana") + "<br>");
+
+        // 8. reverse() - reverse the array
+        fruits.reverse();
+        document.write("Reversed array: " + fruits + "<br>");
+
+        // 9. sort() - sort alphabetically
+        fruits.sort();
+        document.write("Sorted array: " + fruits + "<br>");
+
+        // 10. slice() - get a part of array
+        let slicedFruits = fruits.slice(1, 3);
+        document.write("Sliced array (index 1 to 3): " + slicedFruits + "<br>");
+
+        // 11. splice() - remove/replace elements
+        fruits.splice(1, 1, "Strawberry");
+        document.write("After splice(1, 1, 'Strawberry'): " + fruits + "<br>");
+
+        // 12. join() - convert array to string
+        let joinedString = fruits.join(" - ");
+        document.write("Joined with delimiter: " + joinedString + "<br>");
+
+        // 13. concat() - combine two arrays
+        let vegetables = ["Potato", "Tomato"];
+        let food = fruits.concat(vegetables);
+        document.write("After concat with vegetables: " + food + "<br>");
+    </script>
+</body>
+</html>
